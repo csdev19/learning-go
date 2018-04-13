@@ -1,0 +1,11 @@
+Aqui la leyenda
+|
+|
+|-> cuando use expresiones tipo:
+|   |
+|   |-> <nombre-var> : un nombre cualquiera de variable
+|   |-> <tipo-var>: un tipo de dato cualquiera
+|   |-> <tipo-var>(string|int|boolean|etc): como el anterior pero
+ejemplificando un tipo en especifico 
+|
+|
