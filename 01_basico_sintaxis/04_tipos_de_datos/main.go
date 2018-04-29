@@ -30,9 +30,12 @@ func main() {
 	// valor cero
 	var nombre1 string
 	// nombre = ""
-	// fmt.Println(nombre) -> retorna linea en blanco
+	fmt.Println(nombre1) //-> retorna linea en blanco
 	var numero int
+	fmt.Println(numero) //-> retorna linea en blanco
 	// numero = 0
-	var entiendes boolean
-	// entiendes = false OJO!!!!!
+	var entiendes bool
+	entiendes = false //OJO!!!!!
+	fmt.Println(entiendes)
+
 }
