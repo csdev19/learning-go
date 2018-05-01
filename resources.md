@@ -12,3 +12,4 @@
 
 [Awesome GO](https://github.com/uhub/awesome-go)
 
+[Tour of GO (esp)](https://go-tour-es.appspot.com/#22)
