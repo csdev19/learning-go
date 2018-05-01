@@ -1,5 +1,6 @@
 # Slices en GO
 
+- [Article of Go slides] (https://blog.golang.org/go-slices-usage-and-internals)
 - Los slices representan una secuencia de tamaño de variable de elementos del mismo tipo. Por decirlo asi un array dinamico
 - Tienen un apuntador a un array
 - Los slices tienen 3 elementos especificos:
@@ -22,5 +23,24 @@
     ```
     - A la funcion le pasamos 3 valores: 2 primeros obligatorios y ultimo opcional porque se puede decir que es implicito
 
+- Slices **nil**:
+    - El valor por defecto de un slice es nil.
+    - Un slice nil tiene un tamaño y una longitud de 0.
+    ```go
+    package main
+
+    import "fmt"
+
+    func main() {
+        var z []int
+        fmt.Println(z, len(z), cap(z))
+        if z == nil {
+            fmt.Println("¡nulo!")
+        }
+    }
+    ```
+
+
 - Dato interesante:
     - las variables se alamcenan en memoria ram y por esto se debe tener un control de que tantas se usan
+
