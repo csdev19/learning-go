@@ -28,3 +28,25 @@ func main() {
     }
 }
     ```
+
+- Switch sin condicion: Un switch sin condición es lo mismo que switch true. Esta construcción puede ser una manera clara de escribir cadenas largas if-then-else.
+    ```go
+    package main
+
+import (
+    "fmt"
+    "time"
+)
+
+func main() {
+    t := time.Now()
+    switch {
+    case t.Hour() < 12:
+        fmt.Println("¡Buenos días!")
+    case t.Hour() < 17:
+        fmt.Println("Buenas tardes.")
+    default:
+        fmt.Println("Buenas noches.")
+    }
+}
+    ```
