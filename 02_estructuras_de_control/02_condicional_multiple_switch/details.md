@@ -9,24 +9,24 @@
     ```go
     package main
 
-import (
-    "fmt"
-    "runtime"
-)
+    import (
+        "fmt"
+        "runtime"
+    )
 
-func main() {
-    fmt.Print("Go runs on ")
-    switch os := runtime.GOOS; os {
-    case "darwin":
-        fmt.Println("OS X.")
-    case "linux":
-        fmt.Println("Linux.")
-    default:
-        // freebsd, openbsd,
-        // plan9, windows...
-        fmt.Printf("%s.", os)
+    func main() {
+        fmt.Print("Go runs on ")
+        switch os := runtime.GOOS; os {
+        case "darwin":
+            fmt.Println("OS X.")
+        case "linux":
+            fmt.Println("Linux.")
+        default:
+            // freebsd, openbsd,
+            // plan9, windows...
+            fmt.Printf("%s.", os)
+        }
     }
-}
     ```
 
 - Switch sin condicion: Un switch sin condición es lo mismo que switch true. Esta construcción puede ser una manera clara de escribir cadenas largas if-then-else.
