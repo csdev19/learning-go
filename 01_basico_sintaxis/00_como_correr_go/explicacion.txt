@@ -1,8 +1,0 @@
-Para solo compilar y ver el resultado usamos
-|
-|-> go run <nombre-del-archivo-.go>
-|
-
-Pära compilar y crear un archivo .exe
-|
-|-> go build <nombre-del-archivo-.go>
