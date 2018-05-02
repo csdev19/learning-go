@@ -42,3 +42,5 @@
     ```go
      var <var1>, <var2> <tipo-var>(string)
     ```
+
+- **NOTA:** Para no usar una variable usaremos el **"_"**. El ejemplo esta en la seccion del ciclo **for**
