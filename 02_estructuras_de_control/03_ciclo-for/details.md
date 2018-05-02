@@ -102,4 +102,7 @@
         }
     }
     ```
-
+- En el for con range podemos omitir el valor y seguira funcionando.
+    ```go
+    for i := range <any-iter-item>{}
+    ```
