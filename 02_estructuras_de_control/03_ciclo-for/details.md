@@ -106,3 +106,4 @@
     ```go
     for i := range <any-iter-item>{}
     ```
+- Un detalle de **Go** es que si iteras un string te devolvera los valores numericos de estos y para convertirlos a letras normales debemos castearlos con la funcion string().
