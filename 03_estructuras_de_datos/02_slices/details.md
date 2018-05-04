@@ -1,7 +1,19 @@
 # Slices en GO
 
+- Los slices si pueden variar en cuanto a tamaño.
+- Un slice es un segmento de un array. Y como los arrays los slices son indexables y tienen un tamaño. En cambio estos pueden variar.
 - [Article of Go slides] (https://blog.golang.org/go-slices-usage-and-internals)
 - Los slices representan una secuencia de tamaño de variable de elementos del mismo tipo. Por decirlo asi un array dinamico
+    ```go
+    func main (){
+        // declaracion normal
+        var x []float32
+        // declaracion dinamica con la funcion make
+        y := make([]float32)
+        // declaracion dinamica
+        z := []float32{<values>}
+    }
+    ```
 - Tienen un apuntador a un array
 - Los slices tienen 3 elementos especificos:
     1. Apuntador a un array

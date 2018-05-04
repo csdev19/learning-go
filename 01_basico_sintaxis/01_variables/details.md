@@ -21,17 +21,15 @@
     - Las variables automaticamente detectaran que valor se deposita en ellas
 
 - Declaracion implicita de variables (permite el tipado dinamico -> ':=')
-    - Solo se podra usar dentro de una funcion de lo contrario se devera usar
-|   |   la palabra var
-|   |
-|   |-> la declaracion implicita nos permite obviar el usar la palabra var y
-|   |   detallar el tipo de dato, este se autoasignara
-|       ejem:
-            ```go
+    - Solo se podra usar dentro de una funcion de lo contrario se devera usar la palabra var
+    - La declaracion implicita nos permite obviar el usar la palabra **var** y detallar el tipo de dato, este se autoasignara  ejem:
+        ```go
+        func main () {
             a := 1
             b := 'hola'
             c := true
-            ```
+        }
+        ```
 
 - Declaracion de variables consecutivas
    - Al momento de crear variables variables podemos optar por:
@@ -41,6 +39,18 @@
    - Si las variables consecutivas son del mismo tipo podemos...
     ```go
      var <var1>, <var2> <tipo-var>(string)
+    ```
+
+- Definiendo multiples variables
+    ```go
+    func main() {
+        var (
+            a = 14
+            b = 15
+            c = 51
+            d = 19
+        )
+    }
     ```
 
 - **NOTA:** Para no usar una variable usaremos el **"_"**. El ejemplo esta en la seccion del ciclo **for**

@@ -1,5 +1,6 @@
 # Arrays en GO
 
+- Los arrays se caracterizan por tener un numero limitado de espacio el cual es definido al momento de ser creado.
 - var <nombre> [<valor-nummerico>]<tipo-de-dato>
 - Todo los valores deben ser del mismo tipo
 - El tamaño es fijo y se declara junto con la variable

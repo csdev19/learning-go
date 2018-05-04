@@ -8,6 +8,9 @@
     import "fmt"
 
     func main(){
+        // de manera tradicional
+        var x map[string]int
+        // con la palabra reservada make
         var dicc = make(map(string)string)
         fmt.Println(dicc)
     }

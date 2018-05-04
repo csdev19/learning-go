@@ -1,4 +1,4 @@
-# Estructuras
+# Estructura
 
 - Son una secuencia de elementos nombrados, que se llaman campos. Cada uno de los cuales tienen un nombre y un tipo.
 - Una **Estructura** es el "equivalente" a las clases de otros lenguajes de programacion.
