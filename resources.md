@@ -12,7 +12,7 @@
 - [Tour of GO (esp)](https://go-tour-es.appspot.com/#22)
 - [50 Shapes of Go(common mistakes)](http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/index.html#opening_braces)
 ## Books
-- [Introducing Go]()http://www.allitebooks.com/introducing-go/
+- [Introducing Go](http://www.allitebooks.com/introducing-go/) : 1frst book readed to complement
 - [Web Development with Go](http://www.allitebooks.com/web-development-with-go/)
 - [Go in Action](http://www.allitebooks.com/go-in-action/)
 - [Go in Practice](http://www.allitebooks.com/go-in-practice/)
