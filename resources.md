@@ -17,3 +17,4 @@
 - [Go in Action](http://www.allitebooks.com/go-in-action/)
 - [Go in Practice](http://www.allitebooks.com/go-in-practice/)
 - [Go WebPrograming](http://www.allitebooks.com/go-web-programming/)
+- [Concurrency in Go](http://www.allitebooks.com/concurrency-in-go/)
