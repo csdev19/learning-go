@@ -46,6 +46,26 @@
     ```
 
 ## Funciones que retornan valores
+- **OJO**: cuando retornamos valores podemos ponerle nombres a los valores que devolveremos y con esto las estariamos **inicializando**, asi que cuando tengas que retornar podrias solo escribir **return** y te devolveria las variables que especificaste automaticamente.
+```go
+package main
+
+import (
+    "fmt"
+    "errors"
+)
+
+func main(){
+    valor := devuelveValor()
+    fmt.Println(valor)
+}
+
+func devuelveValor(val int) (resultado int){
+    resultado = 124
+    return
+}
+```
+
 - Para retornar debemos usar la palabra reservada **return**
 - Debemos decir de dato queremos devolver como se vera a continuacion
     ```go
@@ -75,7 +95,7 @@
 
 
 ## Funciones que retornan multiples valores
-- Por lo cual devuelve un slice []**tipo-de-dato**
+- Por lo cual devuelve un slice []**tipo-de-dato**. Y tambien cuando asignes variables a retornar no olvidar encerrar los valores entre **parentesis ()**.
     ```go
     package main
 
@@ -123,8 +143,8 @@
         }
     }
     ```
-- 
--
+
+
 
 ## Defer (Aplazamiento)
 
@@ -204,4 +224,6 @@
         panic("PANIC")
     }
     ```
+## Funciones Anonimas
 
+- Las **funciones anonimas** en **GO** som un **tipo de dato**.
