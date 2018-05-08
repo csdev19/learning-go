@@ -95,6 +95,7 @@ func devuelveValor(val int) (resultado int){
 
 
 ## Funciones que retornan multiples valores
+
 - Por lo cual devuelve un slice []**tipo-de-dato**. Y tambien cuando asignes variables a retornar no olvidar encerrar los valores entre **parentesis ()**.
     ```go
     package main
@@ -227,3 +228,54 @@ func devuelveValor(val int) (resultado int){
 ## Funciones Anonimas
 
 - Las **funciones anonimas** en **GO** som un **tipo de dato**.
+- Mantiene disponible el valor de sus variables para la siguiente ejecucion de si misma. Y una funcion anonima puede tambien **como es un tipo de dato** asignarse a una variable. Incluso puede ser autoejecutada tal como otros lenguajes de programacion.
+    ```go
+    package main
+
+    import "fmt"
+
+    func main(){
+        func (){
+            fmt.Println("YO me llamo a mi mismo")
+        }()
+
+        imprimir := func (){
+            fmt.Println("Me imprimo yo solito")
+        }
+
+        imprimir() // devuelve el msj
+        fmt.Printf("%T\n", imprimir)
+    }
+    ```
+
+- El tipo de dato que devuelve es **func()**.
+
+## Funcion que retorna una funcion anonima
+
+- Aqui un ejemplo
+    ```go
+    package main
+
+    import "fmt"
+
+    func main(){
+        sec1 := sec()
+        // sec1 es una funcion
+        fmt.Println(sec1()) // devuelve 1
+        fmt.Println(sec1()) // devuelve 2
+        fmt.Println(sec1()) // devuelve 3
+        fmt.Println(sec1()) // devuelve 4
+        fmt.Println(sec1()) // devuelve 5
+        fmt.Println(sec1()) // devuelve 6
+        // y se puede ver que la varaiable "x" dentro de la funcion aun existe y aumenta
+    }
+
+    // la funcion sec retorna func() que retorna un int
+    func sec() (func() int ) {
+        var x int
+        return func() int {
+            x++
+            return x
+        }
+    }
+    ```
