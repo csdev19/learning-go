@@ -20,7 +20,7 @@
     }
     func main() {
         x := 5
-        zera(&x)
+        zero(&x)
         fmt.Println(x) // ahora si es 0
     }
     ```
