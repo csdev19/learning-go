@@ -21,5 +21,6 @@ func main() {
 }
 
 func changeToZero(numero *int) {
+	fmt.Println(numero)
 	*numero = 0
 }
